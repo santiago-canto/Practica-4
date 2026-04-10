@@ -101,22 +101,26 @@
             Timer3.Enabled = True
             Start_Button = True
             Start.Text = "Stop"
+            startTime = DateTime.Now
         ElseIf Start_Button = True Then
             Timer3.Enabled = False
             Start_Button = False
             Start.Text = "Start"
-
+            elapsed += DateTime.Now - startTime
         End If
     End Sub
 
     Private Sub Reset_Click(sender As Object, e As EventArgs) Handles Reset.Click
-        Tiempo = 0
+        elapsed = TimeSpan.Zero
         Timer3.Enabled = False
+        Crono.Text = "00:00:00.00"
+        Start_Button = False
+        Start.Text = "Start"
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        Tiempo = Tiempo + 1
-        Crono.Text = Tiempo.ToString()
+        Dim current = elapsed + (DateTime.Now - startTime)
+        Crono.Text = current.ToString("hh\:mm\:ss\.ff")
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
@@ -127,6 +131,13 @@
         End If
     End Sub
 
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        If Panel3.Visible = False Then
+            Panel3.Visible = True
+        ElseIf Panel3.Visible = True Then
+            Panel3.Visible = False
+        End If
+    End Sub
 End Class
 
 
