@@ -122,5 +122,14 @@
   <ItemGroup>
     <None Include="Resources\settings-gear-setup-icon-in-clipart-style-vector.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cronometro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cronometro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reloj de Arena.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

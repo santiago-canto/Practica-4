@@ -22,6 +22,21 @@ Practica 4
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Practica_4.My.Resources.Resources.cronometro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Practica_4.My.Resources.Resources.cronometro1">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Practica_4.My.Resources.Resources.Reloj_de_Arena">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Practica_4.My.Resources.Resources.settings_gear_setup_icon_in_clipart_style_vector">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
